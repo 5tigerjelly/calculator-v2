@@ -22,7 +22,8 @@ print("6 % 4 = \(modFunc(6,4))")
 
 
 //generic "math operation" function
-func mathOp(left : Int, right : Int, op : (Int, Int) -> Int) -> Int {
+typealias math = (Int, Int) -> Int
+func mathOp(left : Int, right : Int, op : math) -> Int {
     return op(left, right)
 }
 
@@ -92,6 +93,15 @@ print("[4,3,43,1] = \(arrayAvg([4,3,43,1]))")
 print("[5,4,33] = \(arrayAvg([5,4,33]))")
 print("[6,5] = \(arrayAvg([6,5]))")
 
+typealias math2 = [Int] -> Int
+func genArray(numArray : [Int], op : math2) -> Int{
+    return op(numArray)
+}
+
+print("[1,22,44] average = \(genArray([1,22,44], op: arrayAvg))")
+print("[1,22,44] count = \(genArray([1,22,44], op: arrayCount))")
+print("[1,22,44] multiplication = \(genArray([1,22,44], op: arrayMul))")
+print("[1,22,44] addition = \(genArray([1,22,44], op: arrayAdd))")
 
 func addTuple(a: (x1: Int, y1: Int), b: (x2: Int, y2: Int)) -> (x: Int, y: Int){
     return ((a.x1+b.x2),(a.y1+b.y2))
@@ -118,7 +128,6 @@ print("(9,3) - (43,24) = \(subTuple((9,3),b: (43,24)))")
 
 
 func addDictionary(a : [String:Int], b : [String:Int]) -> [String:Int]{
-    
     return["a":0]
 }
 
