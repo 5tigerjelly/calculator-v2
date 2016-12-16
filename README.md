@@ -1,23 +1,23 @@
 # iOS Calculator 2.0
 ##Build a calculator
 
-Create four functions for add, subtract, multiply, divide
-each does the expected thing
-create a function that expects one of them along with two Ints
-in other words, a generic "math operation" function
-it should then take the two Ints and pass them to the function
-and return the result
+* Create four functions for add, subtract, multiply, divide
+  * each does the expected thing
+* Create a function that expects one of them along with two Ints
+  * in other words, a generic "math operation" function
+  * it should then take the two Ints and pass them to the function
+  * and return the result
 
 ##Array fun
 
-create two new functions for add/mul
-instead of taking two Ints, take an array of Ints instead
-return the result of (adding/multiplying) all of the elements
-create two new functions (count, avg) that take an array of Ints
-again, operate on the array and return the result
-return the result
-refactor all four down to another "generic math operation" approach
-like in the previous part
+* Create two new functions for add/mul
+  * instead of taking two Ints, take an array of Ints instead
+  * return the result of (adding/multiplying) all of the elements
+* Create two new functions (count, avg) that take an array of Ints
+  * again, operate on the array and return the result
+  * return the result
+* refactor all four down to another "generic math operation" approach
+  * like in the previous part
 
 ##Points
 
